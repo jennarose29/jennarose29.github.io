@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jenna Robbins | CS499 Capstone Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      font-family: "Times New Roman", Times, serif;
+      margin: 0;
+      padding: 60px;
+      background-color: #fdecef; /* soft pastel pink */
+      color: #2e2e2e;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 5px;
+      font-weight: normal;
+    }
+
+    header p {
+      font-size: 16px;
+      letter-spacing: 1px;
+    }
+
+    .projects {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .project {
+      margin-bottom: 50px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #e5cdd3;
+    }
+
+    .project h2 {
+      font-size: 22px;
+      margin-bottom: 8px;
+      font-weight: normal;
+    }
+
+    .tech {
+      font-size: 14px;
+      margin-bottom: 10px;
+      color: #6b5b5f;
+    }
+
+    a {
+      text-decoration: none;
+      color: #c14f6f;
+      font-style: italic;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<header style="text-align:center; margin-bottom:60px;">
+  <h1 style="font-weight:normal;">CS499 ePortfolio</h1>
+  <p>Jenna Rose Robbins</p>
+</header>
+
+<div style="max-width:900px; margin:auto; line-height:1.7;">
+
+  <!-- PROFESSIONAL SELF-ASSESSMENT -->
+  <section style="margin-bottom:60px;">
+    <h2>Professional Self-Assessment</h2>
+    <p>
+      Throughout my time in the SNHU Computer Science program, I have developed both technical depth and professional communication skills that prepare me for a career in software development. Over the past 2.5 years, I gained experience debugging across multiple programming languages, analyzing algorithm efficiency, designing structured systems, and understanding computer architecture. What began as learning syntax and logic evolved into designing scalable, secure, and optimized computing solutions grounded in industry standards.
+    </p>
+    <p>
+      Developing this ePortfolio allowed me to reflect on measurable growth across software engineering, algorithms, and database design. Rather than simply creating functional programs, I now approach development with intentional consideration of maintainability, efficiency, scalability, and security. Through structured code reviews, enhancement planning, and written technical narratives, I strengthened my ability to communicate technical decisions clearly to diverse audiences. These experiences reinforced the importance of collaboration, documentation, and stakeholder-focused communication in professional environments.
+    </p>
+    <p>
+      Across my artifacts, I demonstrate improvements in architectural design, algorithmic optimization, and database refinement. I also demonstrate a security mindset by identifying vulnerabilities and implementing preventative measures. Together, these artifacts illustrate not only my technical abilities but also my readiness to contribute meaningfully in a professional computer science role.
+    </p>
+  </section>
+
+  <!-- CODE REVIEW -->
+  <section style="margin-bottom:60px;">
+    <h2>Informal Code Review</h2>
+    <p>
+      The informal code review video provides a detailed walkthrough of the original artifacts, highlights structural, performance, and security weaknesses, and explains the reasoning behind each planned enhancement. The review demonstrates my ability to analyze existing systems, communicate technical concerns, and justify design improvements aligned with the five course outcomes.
+    </p>
+    <p>
+      <a href="INSERT_VIDEO_LINK_HERE" target="_blank">Watch Code Review Video</a>
+    </p>
+  </section>
+
+    <!-- CATEGORY ONE -->
+  <section style="margin-bottom:60px;">
+    <h2>Category One: Software Design and Engineering</h2>
+    <p>
+      The artifact selected for this category is the event tracking mobile application developed in CS-360 in June 2025. The original application allowed users to register, log in, and manage events; however, it contained structural and security weaknesses. Passwords were stored in plain text, and user interface logic was tightly coupled with business logic, limiting maintainability and scalability.
+    </p>
+    <p>
+      To enhance this artifact, I implemented BCrypt password hashing to replace plain-text storage, ensuring that user credentials remain protected even if the database is compromised. This demonstrates an applied understanding of cryptographic hashing, salt generation, and secure authentication practices. Additionally, I refactored the application using the Model-View-ViewModel (MVVM) architecture. Separating the user interface, business logic, and data layers improved testability, maintainability, and long-term scalability. This enhancement reflects growth in architectural thinking, secure coding practices, and professional software design standards.
+    </p>
+    <p>
+     In enhancing this artifact I learned the importance of designing software with both security and maintainability in mind from the beginning. I also developed a stronger appreciation for architectural patterns and how structured design decisions significantly impact long-term code quality and scalability.
+    </p>
+  </section>
+
+
+  <!-- CATEGORY TWO -->
+  <section style="margin-bottom:60px;">
+    <h2>Category Two: Algorithms and Data Structures</h2>
+    <p>
+      The artifact selected for this category is a text-based adventure game developed in CS-140 in October 2023. The original implementation relied on repeated conditional statements and linear data handling to manage room navigation, player commands, and inventory tracking. While functional, the structure did not effectively demonstrate advanced algorithmic design or efficient data structure selection.
+    </p>
+    <p>
+      To improve this artifact, I redesigned the navigation system using a graph represented by an adjacency list. This allowed player movement to be handled through structured traversal rather than hard-coded conditional logic. I implemented a Breadth-First Search (BFS) algorithm to calculate the shortest safe path to remaining items, accessible through an optional hint command. This guarantees optimal pathfinding within an unweighted graph and demonstrates the practical application of graph theory concepts.
+    </p>
+    <p>
+      Additional optimizations included replacing repeated string parsing logic with a command dictionary for constant-time lookup and using a set for inventory management to improve lookup efficiency from O(n) to O(1). These enhancements demonstrate growth in algorithmic analysis, complexity evaluation, and the thoughtful selection of appropriate data structures to improve scalability and performance.
+    </p>
+    <p>
+      During this enhancement I learned how significantly data structure selection affects performance and scalability. I also strengthened my ability to evaluate time complexity and intentionally redesign systems using more efficient algorithmic approaches.
+    </p>
+  </section>
+
+
+  <!-- CATEGORY THREE -->
+  <section style="margin-bottom:60px;">
+    <h2>Category Three: Databases</h2>
+    <p>
+      The artifact selected for this category is the CS340 Dog Dashboard project, originally completed in June 2025. This project involved managing and querying structured relational data to support an interactive user interface. The original implementation successfully demonstrated database connectivity and basic query functionality.
+    </p>
+    <p>
+      The enhancement focused on improving query efficiency, refining relational schema design, and strengthening integration between the database and application layers. Queries were optimized to reduce redundancy and improve performance, and additional validation mechanisms were incorporated to enhance data integrity. These improvements demonstrate an understanding of scalable database design, structured data management, and the importance of maintaining consistency between application logic and backend systems.
+    </p>
+    <p>
+      While enhancing this artifact, I gained a deeper understanding of how database design decisions directly impact application performance and reliability. I also learned to approach database development with greater attention to normalization, integrity constraints, and long-term scalability.
+    </p>
+  </section>
+
